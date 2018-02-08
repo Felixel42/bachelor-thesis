@@ -36,10 +36,8 @@ export function loginUser() {
           console.error(error);
         }
         
-        // Change to .at(address) instead of deployed to use an existing Authentication Contract First Try,('0x8D0B8D01fd2155C8bfb670D65432b3251A60e2Ee')   
-        // Newer Version in combination with version2 of contract at("0xb2c4698827E078b17f2FE3ed8c15500079177234"), all on Kovan
-        // at("0x97a1389fFd594CCAd95EaDd253cE565b8735c190")
-        authentication.at("0x97a1389fFd594CCAd95EaDd253cE565b8735c190").then(function(instance) {
+        // Change to .at(address) instead of deployed to use an existing Authentication Contract on the Blockchain   
+        authentication.deployed().then(function(instance) {
           var authenticationInstance = instance
           //Create Authentication Event
           instance.authenticate({from: coinbase})

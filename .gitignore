@@ -8,6 +8,7 @@ coverage
 
 # production
 build
+build_webpack
 
 # misc
 .DS_Store
@@ -16,3 +17,5 @@ Thumbs.db
 .idea
 npm-debug.log
 compilation-stats.json
+.vscode
+
