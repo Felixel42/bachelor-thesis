@@ -1,12 +1,16 @@
 # Bachelor thesis
 
-The objective of my thesis can be briefly described  as: Create a 2.0 version of Project Oaken's [water-meter-acorn](https://github.com/Oaken-Innovations/water-meter-acorn). New features are: 
+The objective of my thesis can be briefly described  as: Design and implement a 2.0 version of Project Oaken's [water-meter-acorn](https://github.com/Oaken-Innovations/water-meter-acorn). Additional features are:
 
-* Authentication via the Ethereum Blockchain 
-* Separate views for admin and customer 
-* Hourly recording of smart meter readings and payment history. 
+* Authentication via the Ethereum Blockchain
+* Separate views for admin and customer
+* Hourly recording of smart meter readings and payment history.
 
 ## Goals
+
+Cut out **intermediaries** involved in the billing and payment process of water suppliers. Utilizing the reliable, distributed and tamper-proof characteristics of Blockchain infrastructure to improve services around one of the most valuable resources. See also [Project Oaken's Video](https://youtu.be/DsR5Y7SiPlM?t=200)
+
+It was a great opportunity for me to gain experiences about Ethereum, Smart Contracts and the related technologies.
 
 ## Table of contents
 
@@ -14,9 +18,13 @@ The objective of my thesis can be briefly described  as: Create a 2.0 version of
 
 ![Overview](/docs/img/architecture.png)
 
+## Process view
+
+![BPMN](/docs/img/billing.png)
+
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+### Overview
 
 ### Prerequisites
 
