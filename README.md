@@ -14,6 +14,30 @@ It was a great opportunity for me to gain experiences about Ethereum, Smart Cont
 
 ## Table of contents
 
+* [Bachelor thesis](#bachelor-thesis)
+    * [Goals](#goals)
+    * [Table of contents](#table-of-contents)
+    * [Architectural overview](#architectural-overview)
+    * [Process view](#process-view)
+    * [Directories](#directories)
+    * [Getting Started](#getting-started)
+        * [Prerequisites](#prerequisites)
+        * [Installing](#installing)
+    * [Running the smart contract tests](#running-the-smart-contract-tests)
+    * [Deployment of smart contracts](#deployment-of-smart-contracts)
+        * [Local test-blockchain (truffle)](#local-test-blockchain-truffle)
+        * [Testnet (Kovan, Rinkeby, Ropsten)](#testnet-kovan-rinkeby-ropsten)
+    * [Usage](#usage)
+        * [Authentication](#authentication)
+        * [Create new contract and user](#create-new-contract-and-user)
+        * [User login](#user-login)
+        * [Request new invoice](#request-new-invoice)
+        * [Pay Invoice](#pay-invoice)
+        * [Receive money](#receive-money)
+    * [Contributing](#contributing)
+    * [License](#license)
+    * [Acknowledgments](#acknowledgments)
+
 ## Architectural overview
 
 ![Overview](/docs/img/architecture.png)
@@ -37,7 +61,7 @@ Dapp/
 
 ## Getting Started
 
-The following instructions show how to run the **Dapp** (Decentralized Application) in combination with the Smart Contracts. The guide and resources to let the Raspberry Pi communicate with Smart Contracts can be found in this separate [Readme](/pi/README.md).
+The following instructions show how to run the **Dapp** (Decentralized Application) in combination with smart sontracts. The guide and resources to let the Raspberry Pi communicate with smart contracts can be found in this separate [Readme](/pi/README.md).
 
 ### Prerequisites
 
