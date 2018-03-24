@@ -111,6 +111,7 @@ npm start
 ### Authentication
 
 Log in the first time as admin (public address of user specified in the constructor of Authentication smart contract). See how it works: [sequence_diagram](docs/img/sequence_diagram_authentication.png)
+![authentication](docs/img/authentication.gif)
 
 ### Create new contract and user
 
