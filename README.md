@@ -4,7 +4,7 @@ The objective of my thesis can be briefly described  as: Design and implement a 
 
 * Authentication via the Ethereum Blockchain
 * Separate views for admin and customer
-* Hourly recording of smart meter readings and payment history.
+* Hourly recording of smart meter readings and payment history
 
 ## Goals
 
@@ -22,48 +22,81 @@ It was a great opportunity for me to gain experiences about Ethereum, Smart Cont
 
 ![BPMN](/docs/img/billing.png)
 
+## Directories
+
+```
+Dapp/
+├── contracts/   (Smart contracts)
+├── migrations   (truffle deployment)
+├── public/      (html template)
+    ├── img/     (images)
+├── scss/        (scss source)
+├── src/         (js|jsx source)
+├── test/        (truffle tests)
+```
+
 ## Getting Started
 
-### Overview
+The following instructions show how to run the **Dapp** (Decentralized Application) in combination with the Smart Contracts. The guide and resources to let the Raspberry Pi communicate with Smart Contracts can be found in this separate [Readme](/pi/README.md).
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
+* node >= 6.0.0
+* npm >= 5.0.0
+* truffle >= 4.0.0
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
-
-```
-Give the example
+```bash
+npm install
+// before calling npm start the first time
+truffle compile
 ```
 
-And repeat
+## Running the smart contract tests
 
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-```
-Give an example
+```bash
+truffle develop
+test
 ```
 
-## Deployment
+## Deployment of smart contracts
 
-Add additional notes about how to deploy this on a live system
+### Local test-blockchain (truffle)
+
+``` bash
+truffle develop
+migrate
+```
+
+### Testnet (Kovan, Rinkeby, Ropsten)
+
+Only the [Authentication](contracts/Authentication.sol) smart contract must be deployed upfront to a network of your choice. Example on [Etherscan](https://kovan.etherscan.io/address/0x97a1389ffd594ccad95eadd253ce565b8735c190). The received contract address has to be changed in the [LoginButtonAction](src/components/Authentication/loginbutton/LoginButtonActions.js) from deployed to .at(yourAddressHere)
+
+```javascript
+authentication.deployed().then(function(instance) {
+```
 
 ## Usage
+
+```bash
+truffle compile
+npm start
+```
+
+### Authentication
+
+Log in the first time as admin (public address of user specified in the constructor of Authentication smart contract). See how it works: [sequence_diagram](docs/img/sequence_diagram_authentication.png)
+
+### Create new contract and user
+
+### User login
+
+### Request new invoice
+
+### Pay Invoice
+
+### Receive money
 
 ## Contributing
 
@@ -71,12 +104,12 @@ If you have any additions or problems regarding this guide, just open an issue, 
 
 ## License
 
-This project is licensed under the GPLv3 License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
 
 ## Acknowledgments
 
 * [CoreUI React](https://coreui.io/react/) for providing an awesome react based and free admin template
 * [Adafruit](https://learn.adafruit.com/adafruit-keg-bot?view=all) with their beer keg-bot tutorial as perfect smart meter example
-* [Truffle](http://truffleframework.com) maintaining the in my opinion best IDE for smart contracts and provider for boxes
+* [Truffle](http://truffleframework.com) maintaining the in my opinion best IDE for smart contracts and provider for cool boxes
 * [Redux-auth-wrapper](https://github.com/mjrussell/redux-auth-wrapper) as authentication component
 * The whole Ethereum ecosystem, keep up the good work!
