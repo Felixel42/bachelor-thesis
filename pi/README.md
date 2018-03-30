@@ -4,7 +4,7 @@
 
 There are three different approaches (only the first two are possible at the moment) to set up the OS for the Pi:
 
-1. Install normal [Raspbian OS](https://www.raspberrypi.org/downloads/raspbian/) with Jessie. (+) easy (-) no preinstalled ethereum clients and many unnecessary software packages like GUI
+1. Install normal [Raspbian OS](https://www.raspberrypi.org/downloads/raspbian/) with Jessie. (+) easy (-) no preinstalled ethereum clients and many unnecessary software packages like GUI, clientGateway is not usable
 
 2. Use [EthRaspbian](https://github.com/diglos/pi-gen). (-) additional configuration is required to use newer client versions. (+) no unnecessary packages
 
