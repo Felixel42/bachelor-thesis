@@ -115,13 +115,23 @@ Log in the first time as admin (public address of user specified in the construc
 
 ### Create new contract and user
 
+![contract_creation](docs/img/contract_creation.gif)
+Must be a bug somewhere between web3, truffle-contract and MetaMask which effects the gasLimit computation for contract creation
+
 ### User login
 
+![user_login](docs/img/user_login.gif)
+
 ### Request new invoice
+![invoice_creation](docs/img/invoice_creation.gif)
 
 ### Pay Invoice
 
+![pay_invoice](docs/img/pay_invoice.gif)
+
 ### Receive money
+
+![receive_payment](docs/img/receive_payment.gif)
 
 ## Contributing
 
